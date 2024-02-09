@@ -4,8 +4,8 @@ services:
     build:
       context: .
     ports:
-      - '3000:3000'
+      - 3002:3002
     volumes:
-      - './app:/app'
+      - ./app:/app
     command: >
       sh -c 'npm install && npm run dev'
